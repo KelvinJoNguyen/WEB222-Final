@@ -1,0 +1,554 @@
+/* Sakura.css v1.3.1
+ * ================
+ * Minimal css theme.
+ * Project: https://github.com/oxalorg/sakura/
+ */
+/* Body */
+html {
+  font-size: 62.5%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif;
+}
+
+body {
+  font-size: 1.8rem;
+  line-height: 1.618;
+  max-width: 100em;
+  margin: auto;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 13px;
+}
+
+@media (max-width: 684px) {
+  body {
+    font-size: 1.53rem;
+  }
+}
+
+@media (max-width: 382px) {
+  body {
+    font-size: 1.35rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+}
+
+h1 {
+  font-size: 2.35em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+}
+
+small,
+sub,
+sup {
+  font-size: 75%;
+}
+
+hr {
+  border-color: #1d7484;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:hover {
+  color: #982c61;
+  border-bottom: 2px solid #4a4a4a;
+}
+a:visited {
+  color: #ffffff;
+}
+
+ul {
+  padding-left: 1.4em;
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+}
+
+li {
+  margin-bottom: 0.4em;
+}
+
+blockquote {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 1em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  padding-right: 0.8em;
+  border-left: 5px solid #1d7484;
+  margin-bottom: 2.5rem;
+  background-color: #f1f1f1;
+}
+
+blockquote p {
+  margin-bottom: 0;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+}
+
+/* Pre and Code */
+pre {
+  background-color: #f1f1f1;
+  display: block;
+  padding: 1em;
+  overflow-x: auto;
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+  font-size: 0.9em;
+}
+
+code {
+  font-size: 0.9em;
+  padding: 0 0.5em;
+  background-color: #f1f1f1;
+  white-space: pre-wrap;
+}
+
+pre > code {
+  padding: 0;
+  background-color: transparent;
+  white-space: pre;
+  font-size: 1em;
+}
+
+/* Tables */
+table {
+  text-align: justify;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 0.5em;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+/* Buttons, forms and input */
+input,
+textarea {
+  border: 1px solid #4a4a4a;
+}
+input:focus,
+textarea:focus {
+  border: 1px solid #1d7484;
+}
+
+textarea {
+  width: 100%;
+}
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #1d7484;
+  color: #f9f9f9;
+  border-radius: 1px;
+  border: 1px solid #1d7484;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.button[disabled],
+button[disabled],
+input[type="submit"][disabled],
+input[type="reset"][disabled],
+input[type="button"][disabled] {
+  cursor: default;
+  opacity: 0.5;
+}
+.button:focus:enabled,
+.button:hover:enabled,
+button:focus:enabled,
+button:hover:enabled,
+input[type="submit"]:focus:enabled,
+input[type="submit"]:hover:enabled,
+input[type="reset"]:focus:enabled,
+input[type="reset"]:hover:enabled,
+input[type="button"]:focus:enabled,
+input[type="button"]:hover:enabled {
+  background-color: #982c61;
+  border-color: #982c61;
+  color: #f9f9f9;
+  outline: 0;
+}
+
+textarea,
+select,
+input {
+  color: #4a4a4a;
+  padding: 6px 10px;
+  /* The 6px vertically centers text on FF, ignored by Webkit */
+  margin-bottom: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+textarea:focus,
+select:focus,
+input:focus {
+  border: 1px solid #1d7484;
+  outline: 0;
+}
+
+input[type="checkbox"]:focus {
+  outline: 1px dotted #1d7484;
+}
+
+label,
+legend,
+fieldset {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 1px;
+  justify-content: left;
+}
+
+.card {
+  background-color: #1d7484;
+  color: white;
+  width: 150px;
+  height: 300px;
+  margin: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  text-align: center;
+}
+
+.textContainer {
+  inline-size: 150px;
+  overflow-wrap: break-word;
+  margin: 10px;
+  padding: 10px;
+  text-align: left;
+  font-size: medium;
+
+  width: 800px;
+  background-color: #cf31a3;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+header {
+  padding: 100px;
+
+  text-align: center;
+  background: #000000;
+  color: white;
+  font-size: 30px;
+  background-image: url("https://www.photos-public-domain.com/wp-content/uploads/2011/03/black-brick-wall-texture.jpg");
+
+  background-attachment: fixed;
+  background-size: 50% 50%;
+}
+
+.largeImage {
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 1px;
+  justify-content: center;
+  text-align: center;
+  width: 850px;
+  height: 400px;
+  background-image: url("https://www.boardgamequest.com/wp-content/uploads/2019/09/Wits-and-Wagers-Header.jpg");
+  background-size: cover;
+}
+
+.middleText {
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 1px;
+  justify-content: left;
+  text-align: left;
+  width: 850px;
+  height: 400px;
+  background-size: cover;
+  background-color: #3e2fa0;
+}
+
+.menu {
+  margin-top: 70px;
+}
+
+.bodyContent {
+  text-align: center;
+  align-content: center;
+}
+
+#awards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 1px;
+  justify-content: center;
+}
+
+.awardCard {
+  background-color: #2b2b2b00;
+
+  width: 200px;
+  height: 500px;
+  margin: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  text-align: center;
+}
+
+.awardsText {
+  margin-top: -40px;
+  padding: 2px 2px;
+  text-align: center;
+  font-size: medium;
+}
+
+.cardBuyImage {
+  border-radius: 25px;
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  width: 400px;
+  height: 400px;
+
+  background-color: #2b2b2bd3;
+  color: white;
+
+  margin: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  text-align: left;
+  background-image: url("https://m.media-amazon.com/images/I/81x8+PpY9vL._AC_SL1500_.jpg");
+  background-size: cover;
+}
+
+.cardBuyImage2 {
+  border-radius: 25px;
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  width: 400px;
+  height: 400px;
+
+  background-color: #2b2b2bd3;
+  color: white;
+
+  margin: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  text-align: left;
+  background-image: url("https://m.media-amazon.com/images/I/71AvVPQ3xwL.jpg");
+  background-size: cover;
+}
+
+.companyLogo {
+  border-radius: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  width: 400px;
+  height: 400px;
+
+  background-color: #2b2b2bd3;
+  color: white;
+
+  margin: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  text-align: left;
+  background-image: url("https://cdn.shopify.com/s/files/1/0283/4324/files/NorthStarLogo_ForLightBack_Outlined_1200px_480x480.jpg?v=1658830133");
+  background-size: cover;
+}
+
+.cardBuyBox {
+  border-radius: 25px;
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  width: 400px;
+  height: 400px;
+
+  background-color: #2b2b2b00;
+  color: white;
+
+  margin: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.cardMiddleText {
+  border-radius: 25px;
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  width: 400px;
+  height: 400px;
+
+  background-color: #cf31a3;
+  color: white;
+
+  margin: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.cardMiddleText2 {
+  border-radius: 25px;
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  width: 400px;
+  height: 400px;
+
+  background-color: #3e2fa0;
+  color: white;
+
+  margin: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.cardMiddleText3 {
+  border-radius: 25px;
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  width: 800px;
+  height: 100px;
+
+  background-color: #cf31a3;
+  color: white;
+
+  margin: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.cardMiddleText4 {
+  border-radius: 25px;
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  width: 800px;
+  height: 100px;
+
+  background-color: #3e2fa0;
+  color: white;
+
+  margin: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.cardLinks {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.cardBuy {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 1px;
+  justify-content: center;
+  text-align: center;
+}
+
+.neonText {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f09, 0 0 82px #f09,
+    0 0 92px #f09, 0 0 102px #f09, 0 0 151px #f09;
+}
+
+.form {
+  height: 250px;
+  background-color: #3e2fa0;
+}
+
+.formReview {
+  height: 400px;
+  background-color: #3e2fa0;
+}
+.formText {
+  margin-top: 20px;
+}
+
+.linkButton {
+  margin-top: 15px;
+  display: block;
+  width: 400px;
+  height: 100px;
+  background-color: #3e2fa0;
+  border-radius: 25px;
+}
+
+#review {
+  height: 50px;
+  width: 400px;
+}
