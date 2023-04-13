@@ -1,5 +1,5 @@
 /**
- * artists.js
+ *
  *
  * Database of reviews
  */

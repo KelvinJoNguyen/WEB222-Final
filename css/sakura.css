@@ -538,6 +538,7 @@ header {
 
 .formReview {
   height: 400px;
+  width: auto;
   background-color: #3e2fa0;
 }
 .formText {
